@@ -9,9 +9,8 @@ de juegos.
 ### Temática
 App de videojuegos en la cual pagas una cuota mensual para tenerlos.
 
-## Modelo de datos
+### Modelo de datos
 ![texto_alternativo](/modelodatos.jpg)
-## Ejemplo modelo de datos
 
 ### borradorFigma
 
