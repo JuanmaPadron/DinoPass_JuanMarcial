@@ -13,4 +13,5 @@ App de videojuegos en la cual pagas una cuota mensual para tenerlos.
 ![texto_alternativo](/modelodatos.jpg)
 
 ### borradorFigma
+![texto_alternativo](/figma.jpg)
 
