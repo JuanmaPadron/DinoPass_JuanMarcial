@@ -10,12 +10,12 @@ de juegos.
 App de videojuegos en la cual pagas una cuota mensual para tenerlos.
 
 ### Modelo de datos
-![texto_alternativo](/Capturas/modelodatos.jpg)
+![texto_alternativo](Capturas/modelodatos.jpg)
 
 ### Ejemplo modelo de datos
-![texto_alternativo](/Capturas/modeloEjemploCaptura.jpg)
+![texto_alternativo](Capturas/modeloEjemploCaptura.jpg)
 
 ### borradorFigma
-![texto_alternativo](/Capturas/figma.jpg)
+![texto_alternativo](Capturas/figma.jpg)
 
 
