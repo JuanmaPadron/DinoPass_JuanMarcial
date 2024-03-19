@@ -15,3 +15,4 @@ Este día hice la pantalla de catálogo con su navegación y su TopAppBar ademá
 ### Día 18:
 Tuve algunos problemas este día con el BottomAppBar pero lo conseguí arreglar también hicimos una investigación por parejas sobre proyectos que usaran kotlin y sqlite.
 ### Día 19:
+Consegui terminar el BottomAppBar en todas las pantallas tambien consegui que al crear la cuenta tienes que repetir contraseña y si no coincide con la primera que pusiste te salta un aviso de error.
