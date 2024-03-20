@@ -1,18 +1,17 @@
 package com.example.dinopass_juanmarcial.screens.other
 
 
+import CustomFamilyFont
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.Gamepad
-import androidx.compose.material.icons.outlined.VideogameAsset
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -22,7 +21,9 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun Catalogo(continuePerfil: () -> Unit,
@@ -45,8 +46,11 @@ fun Catalogo(continuePerfil: () -> Unit,
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopAppBarCatalogo(modifier: Modifier = Modifier) {
+    val customFontFamily = CustomFamilyFont()
     TopAppBar(
-        title = { Text(text = "Catalogo") },
+        title = { Text(text = "Catalogo",
+            fontFamily = customFontFamily,
+            fontSize = 18.sp) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
             containerColor = MaterialTheme.colorScheme.primary
         ),

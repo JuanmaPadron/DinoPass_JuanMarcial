@@ -1,6 +1,6 @@
 package com.example.dinopass_juanmarcial.screens
 
-import com.example.dinopass_juanmarcial.R
+import PlanesMensuales
 import android.app.AlertDialog
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
@@ -8,11 +8,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.dinopass_juanmarcial.R
+import com.example.dinopass_juanmarcial.screens.login.CrearCuenta
 import com.example.dinopass_juanmarcial.screens.login.Login
 import com.example.dinopass_juanmarcial.screens.other.Catalogo
 import com.example.dinopass_juanmarcial.screens.other.Perfil
-import com.example.dinopass_juanmarcial.screens.other.PlanesMensuales
-import com.example.dinopass_juanmarcial.screens.login.CrearCuenta
 
 enum class Home(val title : Int) {
     Login(title = R.string.login),

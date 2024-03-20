@@ -1,5 +1,6 @@
 package com.example.dinopass_juanmarcial.screens.other
 
+import CustomFamilyFont
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -19,9 +20,11 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun Perfil(continuePerfil: () -> Unit,
@@ -47,22 +50,48 @@ fun Perfil(continuePerfil: () -> Unit,
                     containerColor = MaterialTheme.colorScheme.primary
                 ),
             ){
-                Text(text = "Usuario: ")
+                Text(
+                    text = "Nombre: ",
+                    modifier = Modifier.padding(10.dp),
+                    color = Color.Black
+                )
+                Text(
+                    text = "Usuario: ",
+                    modifier = Modifier.padding(10.dp),
+                    color = Color.Black
+                )
+                Text(
+                    text = "Contraseña: ****** ",
+                    modifier = Modifier.padding(10.dp),
+                    color = Color.Black
+                )
+                Text(
+                    text = "Planes mensuales: ",
+                    modifier = Modifier.padding(10.dp),
+                    color = Color.Black
+                )
             }
 
             Button(onClick = { cerrarSesion() },
                 colors = ButtonDefaults.buttonColors(Color.Red),
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
             ) {
                 Text(text = "Cerrar sesión")
             }
         }
     }
 }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopAppBarPerfil(modifier: Modifier = Modifier) {
+    val customFontFamily = CustomFamilyFont()
     TopAppBar(
-        title = { Text(text = "Perfil") },
+        title = { Text(text = "Perfil",
+            fontFamily = customFontFamily,
+            fontSize = 18.sp
+        ) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
             containerColor = MaterialTheme.colorScheme.primary
         ),

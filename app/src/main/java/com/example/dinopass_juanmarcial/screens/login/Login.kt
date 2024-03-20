@@ -1,6 +1,5 @@
 package com.example.dinopass_juanmarcial.screens.login
 
-import com.example.dinopass_juanmarcial.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -25,6 +24,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
+import com.example.dinopass_juanmarcial.R
 
 
 @Composable
