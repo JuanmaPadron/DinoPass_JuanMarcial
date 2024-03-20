@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DinoPass-Juanma"
+rootProject.name = "DinoPass-JuanMarcial"
 include(":app")
  

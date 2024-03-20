@@ -1,4 +1,4 @@
-package com.example.dinopass_juanma.screens.other
+package com.example.dinopass_juanmarcial.screens.other
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -48,7 +48,7 @@ fun Perfil(continuePerfil: () -> Unit,
                 ),
             ){
                 Text(text = "Usuario: ")
-                    }
+            }
 
             Button(onClick = { cerrarSesion() },
                 colors = ButtonDefaults.buttonColors(Color.Red),

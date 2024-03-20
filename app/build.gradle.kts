@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dinopass_juanma"
+    namespace = "com.example.dinopass_juanmarcial"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.dinopass_juanma"
+        applicationId = "com.example.dinopass_juanmarcial"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -68,9 +68,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    implementation("androidx.compose.material:material-icons-extended:1.0.5")
-    implementation("androidx.compose.material:material-icons-core:1.0.5")
-    implementation("androidx.compose.ui:ui:1.0.5")
-
-
+    implementation("androidx.compose.material:material-icons-extended:1.6.3")
+    implementation("androidx.compose.material:material-icons-core:1.6.3")
 }
