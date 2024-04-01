@@ -1,4 +1,4 @@
-package com.example.dinopass_juanma
+package com.example.rjgames
 
 import org.junit.Test
 

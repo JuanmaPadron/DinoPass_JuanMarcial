@@ -115,7 +115,6 @@ val listaDePlanes = listOf(
     Plan(nombre = "DinoPremium", "50.000 juegos", "movil, PC y consolas(PS5, PS4, Xbox series X)")
 
 )
-
 @Composable
 fun CustomFamilyFont(): FontFamily {
     return FontFamily(
