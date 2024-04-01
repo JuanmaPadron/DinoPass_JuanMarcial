@@ -22,3 +22,7 @@ Empece hacer la pantalla de perfil y planes mensuales con sus botones y un boton
 Estuve mirando GitHub que usaran la API de RAWG para poder hacerme una idea de como usarla y estuve probando y de momento lo consegui, sin fallos así que tengo el catalogo casi terminado, ademas de añadir la biblioteca en el perfil tambien tengo la base de datos ya en el proyecto y funcionando.
 ### Día 22:
 Este día estuve más que nada arreglando un poco el código que lo tenía un poco desorganizado, tambien mejorando un poco lo nuevo que tenía gracias a la API y tocando ya un poco los colores, tambien me puse a investigar un poco sobre como poder empezar la parte de suscripción ya que no sabia por donde empezar.
+### Día 25:
+Ya tengo una base creada del carrito de los planes mensuales este día no hice mucho por que tenia cosas que hacer fuera de mi casa más que nada estuve creando la pantalla de suscripciones y la navegación para ella.
+### Día 26: 
+Estuve investigando un poco de como la gente hace los carritos ademas de organizar el código otra vez ya que con la entrada de la API lo tenia un poco desorganizado tambien intente arreglar un problema que tengo con el GitHub Desktop que no me deja clonar nada y tampoco me reconoce el archivo que tengo con los repositorios así que no he actualizado el repositorio estos días.

@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.raw_jet_game_app
+package com.example.rjgames.presentation.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AccountCircle
@@ -67,6 +67,10 @@ sealed class Screens(
         object CarritoPlanMensual : BottomBarScreens(
             route = "carrito",
             title = "Planes Mensuales"
+        )
+        object Inicio : BottomBarScreens(
+            route = "inicio",
+            title = "Inicio"
         )
     }
 

@@ -1,28 +1,34 @@
-package com.example.rjgames.presentation.raw_jet_game_app
+package com.example.rjgames.presentation.navigation
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.rjgames.domain.model.GameQueries
 import com.example.rjgames.domain.model.toGameQueries
+import com.example.rjgames.presentation.catalogo.Catalogo
 import com.example.rjgames.presentation.crearcuenta.CrearCuenta
-import com.example.rjgames.presentation.discover.Discover
-import com.example.rjgames.presentation.favorites.Perfil
 import com.example.rjgames.presentation.filtered_games.FilteredGames
 import com.example.rjgames.presentation.game_details.GameDetailsPage
+import com.example.rjgames.presentation.login.Inicio
 import com.example.rjgames.presentation.login.Login
-import com.example.rjgames.presentation.search.PlanesMensuales
+import com.example.rjgames.presentation.perfil.Perfil
+import com.example.rjgames.presentation.planesmensuales.PlanesMensuales
 import com.example.rjgames.presentation.suscripciones.CarritoPlanMensual
 
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun Navigation(navController: NavHostController) {
 
     NavHost(
         navController = navController,
-        startDestination = Screens.BottomBarScreens.Login.route
+        startDestination = Screens.BottomBarScreens.Inicio.route
     ) {
+        composable(Screens.BottomBarScreens.Inicio.route){
+            Inicio(navController = navController)
+        }
         composable(Screens.BottomBarScreens.Login.route){
             Login(continueCatalogo = { navController.navigate(Screens.BottomBarScreens.Discover.route) },
                 continueCrearCuenta = { navController.navigate(Screens.BottomBarScreens.CrearCuenta.route) })
@@ -31,14 +37,12 @@ fun Navigation(navController: NavHostController) {
             CrearCuenta(continueCatalogo = { navController.navigate(Screens.BottomBarScreens.Discover.route) })
         }
         composable(Screens.BottomBarScreens.Discover.route) {
-            Discover(navController = navController)
+            Catalogo(navController = navController)
         }
 
         composable(Screens.BottomBarScreens.Search.route){
             PlanesMensuales(navController = navController,
-                ContinueDinoBasic = {navController.navigate(Screens.BottomBarScreens.CarritoPlanMensual.route)},
-                ContinueDinoPro = {},
-                ContinueDinoPremium = {})
+                ContinueCarrito = {navController.navigate(Screens.BottomBarScreens.CarritoPlanMensual.route)})
         }
 
         composable(Screens.BottomBarScreens.Perfil.route){

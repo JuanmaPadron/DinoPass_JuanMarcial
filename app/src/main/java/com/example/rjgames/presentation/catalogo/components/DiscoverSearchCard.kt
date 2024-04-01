@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.discover.components
+package com.example.rjgames.presentation.catalogo.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.discover
+package com.example.rjgames.presentation.catalogo
 
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.MutableState

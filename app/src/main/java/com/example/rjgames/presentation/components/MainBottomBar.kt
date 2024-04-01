@@ -1,17 +1,19 @@
 package com.example.rjgames.presentation.components
 
-import androidx.compose.material3.*
+import androidx.compose.material3.BadgedBox
+import androidx.compose.material3.BottomAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
-import com.example.rjgames.presentation.raw_jet_game_app.Screens
-import com.example.rjgames.presentation.ui.theme.AppTheme
 import com.example.rjgames.R
+import com.example.rjgames.presentation.navigation.Screens
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

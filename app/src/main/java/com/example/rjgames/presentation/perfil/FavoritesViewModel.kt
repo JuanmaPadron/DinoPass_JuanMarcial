@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.favorites
+package com.example.rjgames.presentation.perfil
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State

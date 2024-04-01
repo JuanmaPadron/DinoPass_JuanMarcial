@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -35,7 +34,7 @@ data class Product(
     var quantity: Int = 1 // La cantidad predeterminada es 1
 )
 @Composable
-fun MonthlyPlanItem(plan: MonthlyPlan, onAddToCart: (MonthlyPlan) -> Unit) {
+fun PlanesMensuales(plan: MonthlyPlan, onAddToCart: (MonthlyPlan) -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -55,7 +54,7 @@ fun MonthlyPlanItem(plan: MonthlyPlan, onAddToCart: (MonthlyPlan) -> Unit) {
 }
 
 @Composable
-fun ShoppingCart(products: List<Product>, plans: List<MonthlyPlan>, onProductRemoved: (Product) -> Unit, onPlanRemoved: (MonthlyPlan) -> Unit) {
+fun CarritoPlanes(products: List<Product>, plans: List<MonthlyPlan>, onProductRemoved: (Product) -> Unit, onPlanRemoved: (MonthlyPlan) -> Unit) {
     LazyColumn {
         item {
             Text(text = "Productos en el carrito:")
@@ -66,14 +65,14 @@ fun ShoppingCart(products: List<Product>, plans: List<MonthlyPlan>, onProductRem
                 }
             }
             plans.forEach { plan ->
-                MonthlyPlanCard(plan = plan, onPlanRemoved)
+                CardPlanesMensuales(plan = plan, onPlanRemoved)
             }
         }
     }
 }
 
 @Composable
-fun MonthlyPlanCard(plan: MonthlyPlan, onPlanRemoved: (MonthlyPlan) -> Unit) {
+fun CardPlanesMensuales(plan: MonthlyPlan, onPlanRemoved: (MonthlyPlan) -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -102,17 +101,17 @@ Scaffold(
 ) { paddingValues ->
 
     Column(modifier = Modifier.padding(paddingValues)) {
-        MonthlyPlanItem(plan = MonthlyPlan("DinoBasic", 9.99)) {
+        PlanesMensuales(plan = MonthlyPlan("DinoBasic", 9.99)) {
             plans.add(it)
         }
-        MonthlyPlanItem(plan = MonthlyPlan("DinoPro", 14.99)) {
+        PlanesMensuales(plan = MonthlyPlan("DinoPro", 14.99)) {
             plans.add(it)
         }
-        MonthlyPlanItem(plan = MonthlyPlan("DinoPremium", 24.99)) {
+        PlanesMensuales(plan = MonthlyPlan("DinoPremium", 24.99)) {
             plans.add(it)
         }
 
-        ShoppingCart(products = products, plans = plans,
+        CarritoPlanes(products = products, plans = plans,
             onProductRemoved = { product -> products.remove(product) },
             onPlanRemoved = { plan -> plans.remove(plan) }
         )

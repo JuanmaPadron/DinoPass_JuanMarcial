@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.search
+package com.example.rjgames.presentation.planesmensuales
 
 import com.example.rjgames.domain.model.Game
 

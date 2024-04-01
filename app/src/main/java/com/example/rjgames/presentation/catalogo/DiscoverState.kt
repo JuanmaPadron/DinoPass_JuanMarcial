@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.discover
+package com.example.rjgames.presentation.catalogo
 
 import androidx.paging.PagingData
 import com.example.rjgames.domain.model.Game

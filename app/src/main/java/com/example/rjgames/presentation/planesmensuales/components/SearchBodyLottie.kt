@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.search.components
+package com.example.rjgames.presentation.planesmensuales.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme

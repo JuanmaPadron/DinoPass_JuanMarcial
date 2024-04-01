@@ -11,7 +11,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.rjgames.domain.model.GameQueries
 import com.example.rjgames.domain.model.toJSON
-import com.example.rjgames.presentation.raw_jet_game_app.Screens
+import com.example.rjgames.presentation.navigation.Screens
 
 @Composable
 fun GenreList(

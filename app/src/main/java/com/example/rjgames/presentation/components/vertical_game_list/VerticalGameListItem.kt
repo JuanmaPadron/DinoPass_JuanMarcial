@@ -23,7 +23,7 @@ import com.example.rjgames.core.utils.getRatingWithRatingCount
 import com.example.rjgames.domain.model.Game
 import com.example.rjgames.presentation.components.NetworkImage
 import com.example.rjgames.presentation.preview_param_provides.GamePreviewParameterProvider
-import com.example.rjgames.presentation.raw_jet_game_app.Screens
+import com.example.rjgames.presentation.navigation.Screens
 import com.example.rjgames.presentation.ui.theme.AppTheme
 
 @Composable

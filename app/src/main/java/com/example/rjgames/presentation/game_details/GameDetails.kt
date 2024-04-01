@@ -1,10 +1,20 @@
 package com.example.rjgames.presentation.game_details
 
 import androidx.compose.foundation.ScrollState
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.*
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarDuration
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
@@ -17,8 +27,15 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.rjgames.domain.model.GameQueries
 import com.example.rjgames.domain.model.toJSON
-import com.example.rjgames.presentation.game_details.components.*
-import com.example.rjgames.presentation.raw_jet_game_app.Screens
+import com.example.rjgames.presentation.game_details.components.GameDetailDevelopers
+import com.example.rjgames.presentation.game_details.components.GameDetailGenres
+import com.example.rjgames.presentation.game_details.components.GameDetailPublishers
+import com.example.rjgames.presentation.game_details.components.GameDetailTags
+import com.example.rjgames.presentation.game_details.components.GameDetailsHeader
+import com.example.rjgames.presentation.game_details.components.GameDetailsRatingBar
+import com.example.rjgames.presentation.game_details.components.GameDetailsSectionHeader
+import com.example.rjgames.presentation.game_details.components.GameDetailsTopBar
+import com.example.rjgames.presentation.navigation.Screens
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.rjgames.presentation.raw_jet_game_app.Screens
+import com.example.rjgames.presentation.navigation.Screens
 
 @Composable
 fun BestGameOfYearList(

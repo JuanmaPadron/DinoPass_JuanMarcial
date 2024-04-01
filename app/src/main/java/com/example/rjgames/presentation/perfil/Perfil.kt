@@ -1,6 +1,11 @@
-package com.example.rjgames.presentation.favorites
+package com.example.rjgames.presentation.perfil
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -43,7 +48,7 @@ fun Perfil(
 
         if (viewModel.state.value.isLoading) {
             Box(modifier = modifier.padding(paddingValues)) {
-                Text(text = "Loading...")
+                Text(text = "Cargando...")
             }
         }else{
                 Column(

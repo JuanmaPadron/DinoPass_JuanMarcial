@@ -1,4 +1,4 @@
-package com.example.rjgames.presentation.search
+package com.example.rjgames.presentation.planesmensuales
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State

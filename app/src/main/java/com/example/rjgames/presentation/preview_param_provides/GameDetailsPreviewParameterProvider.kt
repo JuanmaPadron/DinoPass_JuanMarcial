@@ -1,7 +1,12 @@
 package com.example.rjgames.presentation.preview_param_provides
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import com.example.rjgames.data.remote.dto.game_details.*
+import com.example.rjgames.data.remote.dto.game_details.GameDetailDeveloper
+import com.example.rjgames.data.remote.dto.game_details.GameDetailGenre
+import com.example.rjgames.data.remote.dto.game_details.GameDetailPublisher
+import com.example.rjgames.data.remote.dto.game_details.GameDetailRating
+import com.example.rjgames.data.remote.dto.game_details.GameDetailStoreX
+import com.example.rjgames.data.remote.dto.game_details.GameDetailTag
 import com.example.rjgames.domain.model.GameDetails
 
 class GameDetailsPreviewParameterProvider : PreviewParameterProvider<GameDetails> {
