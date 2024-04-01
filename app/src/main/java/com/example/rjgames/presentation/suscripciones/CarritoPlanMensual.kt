@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -38,7 +37,7 @@ data class MonthlyPlan(
 data class Product(
     val name: String,
     val price: Double,
-    var quantity: Int = 1 
+    var quantity: Int = 1
 )
 @Composable
 fun PlanesMensuales(plan: MonthlyPlan, onAddToCart: (MonthlyPlan) -> Unit) {
@@ -149,14 +148,11 @@ fun CarritoPlanMensual() {
             )
             Button(onClick = { /*TODO*/ },
                 Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .paddingFromBaseline(40.dp)) {
+                    .align(Alignment.CenterHorizontally)) {
                 Text(text = "Continuar pedido")
             }
         }
-
     }
-
 }
 
 @OptIn(ExperimentalMaterial3Api::class)

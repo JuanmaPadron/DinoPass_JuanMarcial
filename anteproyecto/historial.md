@@ -26,3 +26,5 @@ Este día estuve más que nada arreglando un poco el código que lo tenía un po
 Ya tengo una base creada del carrito de los planes mensuales este día no hice mucho por que tenia cosas que hacer fuera de mi casa más que nada estuve creando la pantalla de suscripciones y la navegación para ella.
 ### Día 26: 
 Estuve investigando un poco de como la gente hace los carritos ademas de organizar el código otra vez ya que con la entrada de la API lo tenia un poco desorganizado tambien intente arreglar un problema que tengo con el GitHub Desktop que no me deja clonar nada y tampoco me reconoce el archivo que tengo con los repositorios así que no he actualizado el repositorio estos días.
+### Día 1
+Fue un día medio perdido porque tuve que esperar a que se descargara el proyecto en clase y el internet no acompaño, pero bueno el tiempo que tuve lo aproveche en el carrito de los planes mensuales y ya esta casi terminado, lo unico que me falta es mirar como podría poner metodos de pago. Tambien empece a tocar un poco de diseño de la app con los colores y como estaría mas o menos posicionado algunos textos.
