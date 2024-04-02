@@ -28,6 +28,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import com.example.rjgames.presentation.navigation.Screens
 
 data class MonthlyPlan(
     val name: String,
@@ -129,7 +131,7 @@ fun CarritoPlanMensual() {
     val products = remember { mutableStateListOf<Product>() }
     val plans = remember { mutableStateListOf<MonthlyPlan>() }
     Scaffold(
-        topBar = { TopAppBarCarrito() }
+        topBar = { TopAppBarCarrito(backPlanMensual = {Screens.BottomBarScreens.Search.route}) }
     ) { paddingValues ->
         Column(modifier = Modifier.padding(paddingValues)) {
             PlanesMensuales(plan = MonthlyPlan("DinoBasic", 9.99)) {
@@ -157,7 +159,7 @@ fun CarritoPlanMensual() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBarCarrito() {
+fun TopAppBarCarrito(backPlanMensual: () -> Unit) {
     TopAppBar(
         title = {
             Text(
@@ -171,7 +173,7 @@ fun TopAppBarCarrito() {
         modifier = Modifier,
         navigationIcon = { },
         actions = {
-            IconButton(onClick = { }) {
+            IconButton(onClick = { backPlanMensual() }) {
                 Icon(
                     imageVector = Icons.Default.ArrowBack,
                     contentDescription = "Atras"
