@@ -64,9 +64,17 @@ sealed class Screens(
             route = "crearcuenta",
             title = "crearcuenta"
         )
-        object CarritoPlanMensual : BottomBarScreens(
-            route = "carrito",
-            title = "Planes Mensuales"
+        object DinoBasic : BottomBarScreens(
+            route = "dinobasic",
+            title = "DinoBasic"
+        )
+        object DinoPro : BottomBarScreens(
+            route = "dinopro",
+            title = "DinoPro"
+        )
+        object DinoPremium : BottomBarScreens(
+            route = "dinopremium",
+            title = "DinoPremium"
         )
         object Inicio : BottomBarScreens(
             route = "inicio",

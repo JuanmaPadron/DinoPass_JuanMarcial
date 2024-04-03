@@ -15,7 +15,9 @@ import com.example.rjgames.presentation.login.Inicio
 import com.example.rjgames.presentation.login.Login
 import com.example.rjgames.presentation.perfil.Perfil
 import com.example.rjgames.presentation.planesmensuales.PlanesMensuales
-import com.example.rjgames.presentation.suscripciones.CarritoPlanMensual
+import com.example.rjgames.presentation.suscripciones.DinoBasic
+import com.example.rjgames.presentation.suscripciones.DinoPremium
+import com.example.rjgames.presentation.suscripciones.DinoPro
 
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -42,7 +44,9 @@ fun Navigation(navController: NavHostController) {
 
         composable(Screens.BottomBarScreens.Search.route){
             PlanesMensuales(navController = navController,
-                ContinueCarrito = {navController.navigate(Screens.BottomBarScreens.CarritoPlanMensual.route)})
+                ContinueDinoBasic = {navController.navigate(Screens.BottomBarScreens.DinoBasic.route)},
+                ContinueDinoPro = { navController.navigate(Screens.BottomBarScreens.DinoPro.route) },
+                ContinueDinoPremium = { navController.navigate(Screens.BottomBarScreens.DinoPremium.route) })
         }
 
         composable(Screens.BottomBarScreens.Perfil.route){
@@ -59,10 +63,15 @@ fun Navigation(navController: NavHostController) {
                 gameId = it.arguments?.getInt("gameId") ?: 0
             )
         }
-        composable(Screens.BottomBarScreens.CarritoPlanMensual.route){
-            CarritoPlanMensual()
+        composable(Screens.BottomBarScreens.DinoBasic.route){
+            DinoBasic(navController)
         }
-
+        composable(Screens.BottomBarScreens.DinoPro.route){
+            DinoPro(navController)
+        }
+        composable(Screens.BottomBarScreens.DinoPremium.route){
+            DinoPremium(navController)
+        }
 
         composable(
             Screens.FilteredGamesScreen.withArgs("gameQueries"),

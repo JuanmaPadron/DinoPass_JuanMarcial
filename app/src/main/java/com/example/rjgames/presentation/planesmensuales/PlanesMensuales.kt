@@ -29,7 +29,9 @@ import com.example.rjgames.presentation.components.MainBottomBar
 @Composable
 fun PlanesMensuales(
     navController: NavHostController,
-    ContinueCarrito: () -> Unit
+    ContinueDinoBasic: () -> Unit,
+    ContinueDinoPro: () -> Unit,
+    ContinueDinoPremium: () -> Unit
     ) {
 
     Scaffold(
@@ -76,7 +78,7 @@ fun PlanesMensuales(
                         fontSize = 13.sp
                     )
                     Button(
-                        onClick = { ContinueCarrito() },
+                        onClick = { ContinueDinoBasic() },
                         colors = ButtonDefaults.buttonColors(MaterialTheme.colorScheme.secondary),
                         modifier = Modifier
                             .align(Alignment.CenterHorizontally)
@@ -128,7 +130,7 @@ fun PlanesMensuales(
                         fontSize = 13.sp
                     )
                     Button(
-                        onClick = { ContinueCarrito() },
+                        onClick = { ContinueDinoPro() },
                         colors = ButtonDefaults.buttonColors(MaterialTheme.colorScheme.secondary),
                         modifier = Modifier
                             .align(Alignment.CenterHorizontally)
@@ -179,7 +181,7 @@ fun PlanesMensuales(
                         fontSize = 13.sp
                     )
                     Button(
-                        onClick = { ContinueCarrito() },
+                        onClick = { ContinueDinoPremium() },
                         colors = ButtonDefaults.buttonColors(MaterialTheme.colorScheme.secondary),
                         modifier = Modifier
                             .align(Alignment.CenterHorizontally)
