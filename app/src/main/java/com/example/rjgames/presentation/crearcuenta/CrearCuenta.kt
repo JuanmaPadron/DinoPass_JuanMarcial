@@ -1,7 +1,5 @@
 package com.example.rjgames.presentation.crearcuenta
 
-import com.example.rjgames.R
-import com.example.rjgames.presentation.login.SimpleOutlinedTextFieldSample
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -20,6 +18,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.rjgames.R
+import com.example.rjgames.presentation.login.SimpleOutlinedTextFieldSample
 
 @Composable
 fun CrearCuenta(
@@ -56,6 +56,7 @@ fun CrearCuenta(
             onClick = {
                 if (contrasenia.trim() == repetirContrasenia.trim()){
                     continueCatalogo()
+
                 } else {
                     onError("Las contraseñas no coinciden")
                 }

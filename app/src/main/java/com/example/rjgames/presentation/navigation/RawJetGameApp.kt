@@ -2,7 +2,6 @@ package com.example.rjgames.presentation.navigation
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
@@ -17,14 +16,5 @@ fun RawJetGamesApp() {
         Navigation(
             navController = navController as NavHostController
         )
-    }
-}
-
-
-@Preview
-@Composable
-fun RawJetGamesAppPreview() {
-    AppTheme {
-        RawJetGamesApp()
     }
 }

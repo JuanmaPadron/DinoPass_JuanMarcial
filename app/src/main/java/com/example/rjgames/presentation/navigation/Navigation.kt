@@ -32,8 +32,7 @@ fun Navigation(navController: NavHostController) {
             Inicio(navController = navController)
         }
         composable(Screens.BottomBarScreens.Login.route){
-            Login(continueCatalogo = { navController.navigate(Screens.BottomBarScreens.Discover.route) },
-                continueCrearCuenta = { navController.navigate(Screens.BottomBarScreens.CrearCuenta.route) })
+            Login(navController)
         }
         composable(Screens.BottomBarScreens.CrearCuenta.route){
             CrearCuenta(continueCatalogo = { navController.navigate(Screens.BottomBarScreens.Discover.route) })
