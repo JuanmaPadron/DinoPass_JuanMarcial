@@ -33,3 +33,4 @@ Cambie todo el apartado de planes mensuales porque no estaba quedando como quer�
 ### Día 3
 Me puse a terminar los planes mensuales que solo me quedaría ya los metodos de pago pero seguramente la deje así por falta de tiempo y me puse con lo de los usuarios con unos videos que me explicaban como hacerlo con firebase tuve unos problemas al poner las implementaciones de firebase y casi me joden el código menos mal que tenía el github seguramente no complete los usuarios porque solo me da errores y no queda mucho tiempo.
 ### Día 4
+Empece hacer todo para la presentacion así como la documentacion con el uso de estándar APA y una pequeña presentación para mañana con información de que trata la app que use para hacerla, capturas para ir explicando la app y un video para ver su funcionamiento al final no complete la autenticación de usuario y la parte de pagos con los planes mensuales.
