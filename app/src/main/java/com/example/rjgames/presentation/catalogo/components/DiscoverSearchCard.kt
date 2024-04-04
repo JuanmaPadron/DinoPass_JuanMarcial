@@ -35,7 +35,7 @@ fun DiscoverSearchCard(
         Box(modifier = Modifier.padding(vertical = 8.dp))
 
         Text(
-            text = "Which game would you like to take a look at?",
+            text = "¿Qué juego quieres buscar hoy?",
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp,),
@@ -68,7 +68,7 @@ fun DiscoverSearchCard(
                     contentDescription = "Search"
                 )
                 Text(
-                    text = "Search Games...",
+                    text = "Buscar juegos...",
                     modifier = Modifier
                         .weight(1f)
                         .padding(start = 8.dp),
@@ -101,13 +101,5 @@ fun DiscoverSearchCard(
         Box(modifier = Modifier.padding(vertical = 8.dp))
 
 
-    }
-}
-
-@Preview(name = "DiscoverSearchCard")
-@Composable
-private fun PreviewDiscoverSearchCard() {
-    AppTheme {
-        DiscoverSearchCard()
     }
 }

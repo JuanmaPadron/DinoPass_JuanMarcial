@@ -28,3 +28,8 @@ Ya tengo una base creada del carrito de los planes mensuales este día no hice m
 Estuve investigando un poco de como la gente hace los carritos ademas de organizar el código otra vez ya que con la entrada de la API lo tenia un poco desorganizado tambien intente arreglar un problema que tengo con el GitHub Desktop que no me deja clonar nada y tampoco me reconoce el archivo que tengo con los repositorios así que no he actualizado el repositorio estos días.
 ### Día 1
 Fue un día medio perdido porque tuve que esperar a que se descargara el proyecto en clase y el internet no acompaño, pero bueno el tiempo que tuve lo aproveche en el carrito de los planes mensuales y ya esta casi terminado, lo unico que me falta es mirar como podría poner metodos de pago. Tambien empece a tocar un poco de diseño de la app con los colores y como estaría mas o menos posicionado algunos textos.
+### Día 2
+Cambie todo el apartado de planes mensuales porque no estaba quedando como quería y lo empece de cero, cree un logo para cada plan mensual y una pantalla para cada uno, tambien me puse mirar videos de como hacer la autenticación de usuarios para poder empezarla el día 3.
+### Día 3
+Me puse a terminar los planes mensuales que solo me quedaría ya los metodos de pago pero seguramente la deje así por falta de tiempo y me puse con lo de los usuarios con unos videos que me explicaban como hacerlo con firebase tuve unos problemas al poner las implementaciones de firebase y casi me joden el código menos mal que tenía el github seguramente no complete los usuarios porque solo me da errores y no queda mucho tiempo.
+### Día 4
