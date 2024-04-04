@@ -61,19 +61,14 @@ fun Perfil(
                         modifier = Modifier
                             .padding(16.dp)
                             .fillMaxWidth()
-                            .size(200.dp),
+                            .size(140.dp),
                         shape = RoundedCornerShape(16.dp),
                         colors = CardDefaults.elevatedCardColors(
                             containerColor = MaterialTheme.colorScheme.primary
                         ),
                     ){
                         Text(
-                            text = "Nombre: ",
-                            modifier = Modifier.padding(10.dp),
-                            color = Color.Black
-                        )
-                        Text(
-                            text = "Usuario: ",
+                            text = "Correo: ",
                             modifier = Modifier.padding(10.dp),
                             color = Color.Black
                         )

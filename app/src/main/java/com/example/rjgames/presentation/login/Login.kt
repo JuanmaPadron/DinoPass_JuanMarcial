@@ -70,7 +70,7 @@ val showLoginForm = rememberSaveable{
                         .size(350.dp)
                         .padding(10.dp)
                 )
-                Text(text = "Inicia sesión", fontSize = 20.sp, color = MaterialTheme.colorScheme.primary)
+                Text(text = "Inicia sesión", fontSize = 25.sp, color = MaterialTheme.colorScheme.primary)
                 UserForm(
                     isCreateAccount = false
                 ){
@@ -80,7 +80,15 @@ val showLoginForm = rememberSaveable{
 
                 }
             } else {
-                Text(text = "Crea una cuenta")
+                Text(text = "Unete a nosotros ya!", fontSize = 25.sp,color = MaterialTheme.colorScheme.primary)
+                Image(
+                    painter = painterResource(id = R.drawable.dinopasslogo),
+                    contentDescription = "Logo",
+                    modifier = Modifier
+                        .size(350.dp)
+                        .padding(10.dp)
+                )
+                Text(text = "Crea una cuenta", fontSize = 25.sp,color = MaterialTheme.colorScheme.primary)
                 UserForm(
                     isCreateAccount = true
                 ){

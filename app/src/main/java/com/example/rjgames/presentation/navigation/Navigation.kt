@@ -8,7 +8,6 @@ import androidx.navigation.compose.composable
 import com.example.rjgames.domain.model.GameQueries
 import com.example.rjgames.domain.model.toGameQueries
 import com.example.rjgames.presentation.catalogo.Catalogo
-import com.example.rjgames.presentation.crearcuenta.CrearCuenta
 import com.example.rjgames.presentation.filtered_games.FilteredGames
 import com.example.rjgames.presentation.game_details.GameDetailsPage
 import com.example.rjgames.presentation.login.Inicio
@@ -33,9 +32,6 @@ fun Navigation(navController: NavHostController) {
         }
         composable(Screens.BottomBarScreens.Login.route){
             Login(navController)
-        }
-        composable(Screens.BottomBarScreens.CrearCuenta.route){
-            CrearCuenta(continueCatalogo = { navController.navigate(Screens.BottomBarScreens.Discover.route) })
         }
         composable(Screens.BottomBarScreens.Discover.route) {
             Catalogo(navController = navController)

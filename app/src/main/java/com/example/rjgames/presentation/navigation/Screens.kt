@@ -59,11 +59,6 @@ sealed class Screens(
             route = "login",
             title = "Login"
         )
-
-        object CrearCuenta : BottomBarScreens(
-            route = "crearcuenta",
-            title = "crearcuenta"
-        )
         object DinoBasic : BottomBarScreens(
             route = "dinobasic",
             title = "DinoBasic"
